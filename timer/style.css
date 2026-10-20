@@ -1,0 +1,51 @@
+* {
+    margin:0px; 
+    padding : 0px; 
+}
+
+body{
+    background: beige;
+}
+
+#bar{
+    height: 9px;
+    width: 100%; 
+    background:green; 
+}
+
+.box{
+    display:flex; 
+    justify-content: center;
+    align-items: cetner;
+    margin:100px; 
+}
+
+.timer{
+    display:flex; 
+    align-items: center;;
+}
+
+#circle{
+    height:300px; 
+    width: 300px;
+    border-radius: 50%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.buttons{
+    display:flex; 
+    align-items:center; 
+    justify-content: center;
+    gap:10px; 
+}
+
+.btn{
+
+    padding:10px 24px; 
+    border: 2px solid gray; 
+}
