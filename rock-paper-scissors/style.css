@@ -1,0 +1,97 @@
+*{
+    margin :0px; 
+    padding:0px; 
+    
+}
+
+body{
+    background:white;
+    font-family: "Minecraft";
+    text-shadow: 2px 2px 0px #8a968a;
+}
+
+.header{
+    height :70px; 
+    background:#39894F;
+    color : white; 
+
+
+    display: flex;
+    align-items: center;
+
+}
+
+.header h1{
+    padding:7px; 
+    font-weight: 100;
+}
+
+.box{
+    /* outline:2px solid red;  */
+    height:600px; 
+    outline:4px solid green; 
+    width:80%; 
+
+}
+
+
+
+.choice{
+    height:200px; 
+    width:200px; 
+    font-size: 20px;
+    font-family: "Minecraft";
+    color:rgb(62, 60, 60); 
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #39894F; 
+}
+
+.box1{
+    height:100px; 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:rgb(62, 60, 60); 
+    font-weight: 300;
+    /* outline:2px solid red;  */
+}
+
+.box2{
+    margin-top:100px; 
+    display:flex; 
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.section{
+    height:600px; 
+    display: flex; 
+
+}
+
+.result{
+    height:100px; 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:rgb(62, 60, 60); 
+    font-weight: 300;
+}
+
+
+.stat-box{
+
+    height:600px;  
+    width:300px; 
+    background: grey;
+    color:white; 
+}
+
+.footer{
+    height:50px; 
+    background: #39894F; 
+    color:rgb(212, 203, 203)
+}
