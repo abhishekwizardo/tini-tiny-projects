@@ -147,6 +147,7 @@ body{
     transform: scale(1.05);
 }
 
+/* Hide the popup until the match ends */
 .popup-overlay.hidden {
     display: none;
 }

@@ -14,6 +14,15 @@ const popupTitle = document.getElementById("popup-title");
 const popupMessage = document.getElementById("popup-message");
 const nextGame = document.getElementById("next-game");
 
+const winnn = new Audio("sounds/minecraft_fireworks.mp3");
+const losss = new Audio("sounds/minecraft_damage.mp3");  
+const tieee = new Audio("sounds/minecraft_click.mp3"); 
+
+winnn.preload = "auto"; 
+losss.preload = "auto"; 
+tieee.preload = "auto"; 
+
+
 let gameOver = false;
 
 function showPopup(won) {
@@ -67,6 +76,8 @@ function res(game){
 
 }
 
+
+
 let choices = ["rock", "paper", "scissors"]; 
 
 function guard(x){
@@ -79,17 +90,23 @@ function guard(x){
     if(x===0){
 
         if(val === 0){
-            result.textContent =  "It's a Tie, go again!"; 
+            result.textContent =  "It's a Tie, go again!";
+            tieee.currentTime = 0; 
+            tieee.play(); 
         }
         else if(val == 1){
 
             result.textContent =  "You Lose this round, your rock was wrapped"; 
             game.bot++; 
+            losss.currentTime = 0; 
+            losss.play(); 
 
         }
         else{
 
             result.textContent =  "You Win this round, Yourcrushed those Scissors Rock!"; 
+            winnn.currentTime = 0; 
+            winnn.play(); 
             game.score++; 
 
         }
@@ -105,16 +122,21 @@ function guard(x){
 
             result.textContent =  "You win the round, your paper wrapped the Rock!"; 
             game.score++; 
+            winnn.currentTime = 0; 
+            winnn.play(); 
         }
         else if(val == 1){
 
             result.textContent =  "It's a tie, Go again!"; 
-
+            tieee.currentTime = 0; 
+            tieee.play(); 
         }
         else{
 
             result.textContent =  "You lost the round and got scissored!"; 
             game.bot++; 
+             losss.currentTime = 0; 
+            losss.play(); 
 
         }
         game.rounds++; 
@@ -125,18 +147,23 @@ function guard(x){
 
             result.textContent =  "You lose the round, Rock beats Scissors!"; 
             game.bot++; 
+            losss.currentTime = 0; 
+            losss.play(); 
 
         }
         else if(val == 1){
 
             result.textContent =  "You win the round, You scissored the papers"; 
             game.score++; 
+            winnn.currentTime = 0; 
+            winnn.play(); 
 
         }
         else{
 
             result.textContent =  "It's a Tie, Go again!"; 
-
+            tieee.currentTime = 0; 
+            tieee.play(); 
         }
 
         game.rounds++; 
