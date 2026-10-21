@@ -16,12 +16,14 @@ const nextGame = document.getElementById("next-game");
 
 const winnn = new Audio("sounds/minecraft_fireworks.mp3");
 const losss = new Audio("sounds/minecraft_damage.mp3");  
-const tieee = new Audio("sounds/minecraft_click.mp3"); 
-
+const tieee = new Audio("sounds/minecraft-click_cO1q3AEI.mp3"); 
+const victory = new Audio("sounds/emand_edroff-victory-bell-success-fanfare-576275 (1).mp3"); 
+const defeat = new Audio("sounds/freesound_community-failure-1-89170.mp3"); 
 winnn.preload = "auto"; 
 losss.preload = "auto"; 
 tieee.preload = "auto"; 
-
+victory.preload = "auto"; 
+defeat.preload = "auto"; 
 
 let gameOver = false;
 
@@ -29,6 +31,14 @@ function showPopup(won) {
     gameOver = true;
 
     popupTitle.textContent = won ? "YOU WIN!" : "YOU LOSE!";
+    if(won){
+        victory.currentTime= 0 ; 
+        victory.play();
+    } 
+    else{
+        defeat.currentTime = 0; 
+        defeat.play(); 
+    }
     popupMessage.textContent = won
         ? "GG! You defeated the computer!"
         : "The computer won. Run it back!";

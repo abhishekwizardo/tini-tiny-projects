@@ -5,19 +5,22 @@
 }
 
 body{
-    background:white;
+    background:rgb(19, 19, 19);
     font-family: "Minecraft";
     text-shadow: 2px 2px 0px #8a968a;
+    color:white; 
+
 }
 
 .header{
     height :70px; 
-    background:#39894F;
+    background:#142f1c;
     color : white; 
 
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -29,9 +32,8 @@ body{
 .box{
     /* outline:2px solid red;  */
     height:600px; 
-    outline:4px solid green; 
-    width:80%; 
-
+    outline:4px solid #1d4429;  
+    width: 100%;   
 }
 
 .choice{
@@ -42,11 +44,11 @@ body{
     color:rgb(62, 60, 60); 
     padding: 5px;
     border-radius: 50%;
-    border: 2px solid #39894F; 
+    border: 2px solid #38744a; 
 }
 
 #rock:hover, #paper:hover, #scissor:hover{
-    box-shadow: 4px 4px 4px 0px #39894F;
+    box-shadow: 4px 4px 4px 0px #2b5c3a;
     cursor: pointer;
 }
 
@@ -56,7 +58,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color:rgb(62, 60, 60); 
+    color:white; 
     font-weight: 300;
     /* outline:2px solid red;  */
 }
@@ -79,22 +81,22 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color:rgb(62, 60, 60); 
+    color:white; 
     font-weight: 300;
 }
 
-
+/* 
 .stat-box{
 
     height:600px;  
     width:300px; 
-    background: grey;
+    background:rgb(19, 19, 19);
     color:white; 
-}
+} */
 
 .footer{
     height:50px; 
-    background: #39894F; 
+    background: #2d613c; 
     color:rgb(212, 203, 203)
 }
 
@@ -138,8 +140,8 @@ body{
     font-family: inherit;
     cursor: pointer;
     border: 2px solid white;
-    background: #54d66b;
-    color: black;
+    background: #295e39;
+    color: rgb(19, 19, 19);
     transition: transform 0.2s;
 }
 
